@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
-    background-image: url('../imgs/flor.png'); /* Asegúrate de que la imagen esté en la carpeta imgs */
+    background-image: url('../imgs/flor.webp'); 
     background-repeat: no-repeat;
     background-position: center 50px;
     background-size: 500px;

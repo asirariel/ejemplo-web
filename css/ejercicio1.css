@@ -40,3 +40,10 @@ h2 {
     padding-top: 5px;
     font-size: 14px;
 }
+
+div {
+    border: 1px solid #1302ff;
+    background-color: #aaa;
+    border-width: 3px;
+    border top-left-radius: 10px;
+}
