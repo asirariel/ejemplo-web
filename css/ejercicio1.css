@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    font-weight: bold;
+    color: black;
+}
+
+h2 {
+    color: red;
+    font-style: italic;
+}
+
+.imagen-centrada {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.imagen-centrada img {
+    width: 120px;
+}
+
+.parrafo-custom {
+    font-family: Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.resaltado {
+    background-color: yellow;
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+.footer-link {
+    border-top: 1px solid #aaa;
+    padding-top: 5px;
+    font-size: 14px;
+}

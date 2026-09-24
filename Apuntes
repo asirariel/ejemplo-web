@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apuntes de LMSGI - Ariel</title>
+    <link rel="stylesheet" href="css/Estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Apuntes de Lenguajes de Marcas</h1>
+        <p>Resumen teórico y práctico de HTML5 y CSS3</p>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="Horario.html">Horario</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="Apuntes.html">Apuntes</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Tema 1: Estructura Básica -->
+        <section>
+            <h2>1. Estructura Básica y Semántica HTML5</h2>
+            <ul>
+                <li><code>&lt;!DOCTYPE html&gt;</code>: Declara que el documento sigue la especificación HTML5.</li>
+                <li><code>&lt;html lang="es"&gt;</code>: Raíz del documento con el idioma del contenido.</li>
+                <li><code>&lt;head&gt;</code>: Contiene metadatos como la codificación <code>UTF-8</code>, la configuración del <code>viewport</code> para diseño adaptativo y los enlaces a los archivos CSS.</li>
+                <li><code>&lt;body&gt;</code>: Alberga todo el contenido visible de la página.</li>
+                <li><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>: Bloques estructurales para la correcta arquitectura semántica de la web.</li>
+            </ul>
+        </section>
+
+        <!-- Tema 2: CSS y Vincular Estilos Externos -->
+        <section>
+            <h2>2. Hojas de Estilo CSS y Separación de Código</h2>
+            <ul>
+                <li><strong>CSS Externo (Buenas prácticas):</strong> Se vincula mediante <code>&lt;link rel="stylesheet" href="css/ejercicio1.css"&gt;</code> en el <code>&lt;head&gt;</code>. Mantiene separada la estructura HTML de la presentación visual.</li>
+                <li><strong>CSS Interno:</strong> Se inserta mediante la etiqueta <code>&lt;style&gt;</code> dentro del propio HTML.</li>
+                <li><strong>Selectores de Clase e ID:</strong> Permiten aplicar estilos específicos usando <code>class="nombre"</code> (selector <code>.nombre</code>) o <code>id="nombre"</code> (selector <code>#nombre</code>).</li>
+                <li><strong>Propiedades tipográficas y visuales aprendidas:</strong>
+                    <ul>
+                        <li><code>font-family</code>: Tipografía utilizada (ej. Arial, Verdana).</li>
+                        <li><code>font-size</code>: Tamaño del texto en píxeles (ej. <code>30px</code>, <code>14px</code>).</li>
+                        <li><code>font-style</code> y <code>font-weight</code>: Estilos de itálica (<code>italic</code>) y negrita (<code>bold</code>).</li>
+                        <li><code>color</code> y <code>background-color</code>: Color del texto y del fondo.</li>
+                        <li><code>text-decoration</code>: Modificadores como el subrayado (<code>underline</code>).</li>
+                        <li><code>text-align</code>: Alineación del contenido (ej. <code>center</code>).</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Tema 3: Bloque vs En línea -->
+        <section>
+            <h2>3. Elementos en Bloque y en Línea</h2>
+            <ul>
+                <li><code>&lt;div&gt;</code>: Contenedor genérico de **bloque**. Ocupa todo el ancho de línea y fuerza un salto de línea.</li>
+                <li><code>&lt;span&gt;</code>: Contenedor genérico **en línea**. Solo envuelve el texto especificado sin forzar saltos de línea.</li>
+                <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>: Titulares estructurados jerárquicamente.</li>
+                <li><code>&lt;p&gt;</code>: Bloque de texto para párrafos.</li>
+                <li><code>&lt;pre&gt;</code>: Bloque de texto **preformateado** que respeta los espacios en blanco y los saltos de línea del código fuente.</li>
+                <li><code>&lt;strong&gt;</code>: Destaca la importancia del texto en negrita.</li>
+                <li><code>&lt;em&gt;</code>: Aplica énfasis visual en cursiva.</li>
+                <li><code>&lt;br&gt;</code>: Inserta un salto de línea manual dentro de un bloque.</li>
+            </ul>
+        </section>
+
+        <!-- Tema 4: Enlaces e Imágenes -->
+        <section>
+            <h2>4. Hipervínculos e Imágenes</h2>
+            <ul>
+                <li><code>&lt;a href="URL" target="_blank"&gt;</code>: Enlace a páginas externas. El atributo <code>target="_blank"</code> abre la dirección en una nueva pestaña.</li>
+                <li><code>&lt;a href="#id_destino"&gt;</code>: **Marcador o ancla interna** para saltar a una sección de la misma página identificada con el atributo <code>id="id_destino"</code>.</li>
+                <li><code>&lt;img src="ruta" alt="descripción"&gt;</code>: Inserta elementos visuales con texto alternativo accesible.</li>
+            </ul>
+        </section>
+
+        <!-- Tema 5: Tablas -->
+        <section>
+            <h2>5. Estructura de Tablas y Combinación de Celdas</h2>
+            <ul>
+                <li><code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>: Etiquetas para construir la cuadrícula de datos (tabla, fila, encabezado y celda).</li>
+                <li><code>&lt;caption&gt;</code>: Define el título o descripción semántica vinculada directamente a la tabla.</li>
+                <li><code>colspan="n"</code>: Expande una celda a lo largo de <em>n</em> columnas horizontales.</li>
+                <li><code>rowspan="n"</code>: Expande una celda a lo largo de <em>n</em> filas verticales.</li>
+            </ul>
+        </section>
+
+        <!-- Tema 6: Formularios -->
+        <section>
+            <h2>6. Formularios Interactivos</h2>
+            <ul>
+                <li><code>&lt;form action="#" method="post"&gt;</code>: Estructura contenedora para la recogida de datos.</li>
+                <li><code>&lt;fieldset&gt;</code> y <code>&lt;legend&gt;</code>: Agrupan los controles dentro de una caja con título decorativo.</li>
+                <li><code>&lt;label for="id_campo"&gt;</code>: Vincula el texto con la casilla correspondiente mediante la coincidencia con su atributo <code>id</code>.</li>
+                <li><code>&lt;input&gt;</code>: Elemento de entrada según el tipo especificado en <code>type</code> (<code>text</code>, <code>email</code>, <code>submit</code>, <code>reset</code>).</li>
+                <li><code>&lt;textarea&gt;</code>: Campo multilínea para la introducción de comentarios o mensajes extensos.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>CIFP Virgen de Gracia | Asignatura LMSGI (1º CFGS ASIR)</p>
+    </footer>
+</body>
+</html>

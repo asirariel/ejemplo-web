@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3: Tablas</title>
+    <link rel="stylesheet" href="css/ejercicio3.css">
+</head>
+<body>
+
+    <!-- Tabla prueba 1 -->
+    <div class="titulo-tabla">Tabla prueba 1</div>
+    <table class="tabla-1">
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+                <th>Columna 3</th>
+                <th>Columna 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>col1</td>
+                <td colspan="2">col2</td>
+                <td rowspan="2">col3</td>
+            </tr>
+            <tr>
+                <td>colum1</td>
+                <td>colum2</td>
+                <td>colum4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Tabla prueba 2 -->
+    <div class="titulo-tabla">Tabla prueba 2</div>
+    <table class="tabla-2">
+        <thead>
+            <tr>
+                <th>Columna 1</th>
+                <th>Columna 2</th>
+                <th>Columna 3</th>
+                <th>Columna 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="fila-verde">
+                <td>col1</td>
+                <td colspan="2">col2</td>
+                <td>col3</td>
+            </tr>
+            <tr class="fila-gris">
+                <td>colum1</td>
+                <td rowspan="2">colum2</td>
+                <td>colum3</td>
+                <td>colum4</td>
+            </tr>
+            <tr class="fila-verde">
+                <td>column1</td>
+                <td>column3</td>
+                <td>column4</td>
+            </tr>
+            <tr class="fila-gris">
+                <td>colu1</td>
+                <td>colu2</td>
+                <td>colu3</td>
+                <td>colu4</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
