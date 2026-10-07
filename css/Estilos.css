@@ -1,14 +1,16 @@
-/* Configuración General */
+/* ==========================================
+   1. CONFIGURACIÓN GENERAL
+   ========================================== */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 20px;
     background-color: #f4f6f9;
-    color: #333;
+    color: #7700ff;
 }
 
 header, footer {
-    background-color: #9900ff;
+    background-color: #7700ff;
     color: #fff;
     padding: 15px;
     border-radius: 8px;
@@ -33,7 +35,9 @@ main {
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Formulario */
+/* ==========================================
+   2. FORMULARIO
+   ========================================== */
 fieldset {
     border: 2px solid #3498db;
     border-radius: 6px;
@@ -86,12 +90,14 @@ input[type="reset"] {
 input[type="submit"]:hover { background-color: #2980b9; }
 input[type="reset"]:hover { background-color: #c0392b; }
 
-/* Estilos de la Tabla */
+/* ==========================================
+   3. ESTILOS DE LA TABLA HORARIO
+   ========================================== */
 .tabla-horario {
     width: 100%;
     border-collapse: collapse;
     margin-top: 15px;
-    background-color: #fca34d; /* Estilo naranja acorde a la muestra */
+    background-color: #fca34d;
 }
 
 .tabla-horario th, 
@@ -109,4 +115,42 @@ input[type="reset"]:hover { background-color: #c0392b; }
 .recreo {
     background-color: #f7b76d;
     font-weight: bold;
+}
+
+/* ==========================================
+   4. NAVEGACIÓN Y DESPLEGABLES (DETAILS/SUMMARY)
+   ========================================== */
+details {
+    margin: 8px 0;
+    padding: 6px 12px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #9900ff;
+    border-radius: 4px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    padding: 4px 0;
+    user-select: none;
+}
+
+summary:hover {
+    color: #9900ff;
+}
+
+details details {
+    background-color: #ffffff;
+    border-left: 3px solid #3498db;
+    margin-left: 15px;
+}
+
+ul.sublista {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+ul.sublista li {
+    margin-bottom: 4px;
 }
