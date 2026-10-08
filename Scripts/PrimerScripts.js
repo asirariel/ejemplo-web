@@ -1,20 +1,41 @@
-alert ("Estoy arto de JavaScript");
+let numero1 = 1;
 
-let numero1 = 5;
+let numero2 = 2;
 
-let numero2 = 10;
+let numero3 = 3;  
 
-let numero3 = numero1 + numero2;  
+let numero4 = 4;
 
-const pi = 3.1416;
-alert (pi);
+let numero5 = 5;
 
-function sumar () {
-    let numero3 = numero1 + numero2;   
-    alert (numero3);
-}  
+let numero6 = 6;
 
-function sumar () {
-    let numero3 = numero1 + numero2;   
-    alert (numero3);
-}  
+let numero7 = 7;  
+
+let numero8 = 8;
+
+let numero9 = 9;
+
+let numero10 = 10;  
+
+
+function escribir(valor){
+ let resultado = document.getElementById("resultado");
+
+ if (resultado.value == "0") {
+  resultado.value = valor;
+ }
+ else { 
+    resultado.value += valor;   
+ }
+}
+
+function borrar (){
+ let resultado = document.getElementById("resultado");
+ resultado.value = "0";
+}
+
+function igual () { 
+    let resultado = document.getElementById("resultado");   
+
+}
