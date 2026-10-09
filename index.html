@@ -2,83 +2,62 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="Ariel" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ariel">
     <title>Portafolio LMSGI - Ariel</title>
     <link rel="stylesheet" href="css/Estilos.css">
 </head>
 <body>
-
     <header>
         <h1>Portafolio de Lenguajes de Marcas</h1>
-        <p>Recopilación de prácticas y ejercicios del curso</p>
+        <p>Recopilación de prácticas y herramientas del curso</p>
+        <nav aria-label="Navegación principal">
+            <a href="index.html" aria-current="page">Inicio</a>
+            <a href="Horario.html">Horario</a>
+            <a href="formulario.html">Formulario</a>
+            <a href="Calculadora.html">Calculadora</a>
+            <a href="Apuntes.html">Apuntes</a>
+        </nav>
     </header>
-
     <main>
-        <!-- Sección 1: Prácticas Varias -->
-        <section>
-            <h2>Prácticas</h2>
+        <section aria-labelledby="herramientas">
+            <h2 id="herramientas">Herramientas</h2>
             <ul>
                 <li><a href="Horario.html">Horario de clase</a></li>
                 <li><a href="formulario.html">Formulario de contacto</a></li>
+                <li><a href="Calculadora.html">Calculadora</a></li>
                 <li><a href="Apuntes.html">Apuntes de la asignatura</a></li>
+                <li><a href="EjemploJava.html">Ejemplo de JavaScript</a></li>
             </ul>
         </section>
-
-        <!-- Sección 2: Unidades y Actividades con Desplegables -->
-        <section>
-            <h2>Unidades y Ejercicios</h2>
-
-            <!-- Desplegable Unidad 1 -->
+        <section aria-labelledby="practicas">
+            <h2 id="practicas">Unidades y ejercicios</h2>
             <details>
                 <summary>Unidad 1: HTML</summary>
-                
-                <!-- Desplegable Actividad 1 -->
-                <details>
-                    <summary>Actividad 1</summary>
-                    <ul class="sublista">
-                        <li><a href="unidad1-ACT1-Ej1.html" target="_blank">Ejercicio 1: Formato de texto</a></li>
-                        <li><a href="unidad1-ACT1-Ej2.html" target="_blank">Ejercicio 2: Listas y enlaces</a></li>
-                        <li><a href="unidad1-ACT1-Ej3.html" target="_blank">Ejercicio 3: Tablas</a></li>
-                    </ul>
-                </details>
-
-                <!-- Desplegable Actividad 2 -->
-                <details>
-                    <summary>Actividad 2</summary>
-                    <ul class="sublista">
-                        <li><a href="unidad1-ACT2-Ej1.html" target="_blank">Ejercicio 1</a></li>
-                        <li><a href="unidad1-ACT2-Ej2.html" target="_blank">Ejercicio 2</a></li>
-                    </ul>
-                </details>
-
-                <!-- Desplegable Actividad 3 -->
-                <details>
-                    <summary>Actividad 3</summary>
-                    <ul class="sublista">
-                        <li><a href="unidad1-ACT3-Ej1.html" target="_blank">Ejercicio 1</a></li>
-                    </ul>
-                </details>
-
-                <!-- Desplegable Actividad 4 -->
-                <details>
-                    <summary>Actividad 4</summary>
-                    <ul class="sublista">
-                        <li><a href="unidad1-ACT4-Ej1.html" target="_blank">Ejercicio 1: Repaso General</a></li>
-                    </ul>
-                </details>
+                <details><summary>Actividad 1</summary><ul class="sublista">
+                    <li><a href="unidad1-ACT1-Ej1.html">Ejercicio 1: Formato de texto</a></li>
+                    <li><a href="unidad1-ACT1-Ej2.html">Ejercicio 2: Listas y enlaces</a></li>
+                    <li><a href="unidad1-ACT1-Ej3.html">Ejercicio 3: Tablas</a></li>
+                </ul></details>
+                <details><summary>Actividad 2</summary><ul class="sublista">
+                    <li><a href="unidad1-ACT2-Ej1.html">Ejercicio 1: Listas</a></li>
+                    <li><a href="unidad1-ACT2-Ej2.html">Ejercicio 2: Enlaces</a></li>
+                    <li><a href="unidad1-ACT2-Ej3.html">Ejercicio 3: Bloques y texto en línea</a></li>
+                </ul></details>
+                <details><summary>Actividad 3</summary><ul class="sublista">
+                    <li><a href="unidad1-ACT3-Ej1.html">Ejercicio 1: Clases e identificadores</a></li>
+                    <li><a href="unidad1-ACT3-Ej2.html">Ejercicio 2</a></li>
+                </ul></details>
+                <details><summary>Actividad 4</summary><ul class="sublista">
+                    <li><a href="unidad1-ACT4-Ej1.html">Ejercicio 1: Repaso general</a></li>
+                </ul></details>
             </details>
-
-            <!-- Desplegable Unidad 2 -->
             <details>
-                <summary>Unidad 2: CSS (Próximamente)</summary>
-                <p style="padding-left: 15px; font-style: italic;">Contenido disponible próximamente.</p>
+                <summary>Unidad 2: CSS</summary>
+                <p class="aviso-proximamente">Contenido disponible próximamente.</p>
             </details>
         </section>
     </main>
-
-    <footer>
-        <p>Asignatura LMSGI (1º CFGS ASIR)</p>
-    </footer>
-
+    <footer><p>Asignatura LMSGI (1.º CFGS ASIR)</p></footer>
 </body>
 </html>

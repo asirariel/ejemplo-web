@@ -2,106 +2,107 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="Ariel" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ariel">
     <title>Apuntes de LMSGI - Ariel</title>
     <link rel="stylesheet" href="css/Estilos.css">
 </head>
 <body>
     <header>
         <h1>Apuntes de Lenguajes de Marcas</h1>
-        <p>Resumen teórico y práctico de HTML5 y CSS3</p>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="Horario.html">Horario</a>
-            <a href="formulario.html">Formulario</a>
-            <a href="Apuntes.html">Apuntes</a>
+        <p>Guía de las etiquetas HTML y de los estilos CSS usados en las prácticas de esta carpeta.</p>
+        <nav aria-label="Navegación principal">
+            <a href="index.html">Inicio</a><a href="Horario.html">Horario</a>
+            <a href="formulario.html">Formulario</a><a href="Calculadora.html">Calculadora</a>
+            <a href="Apuntes.html" aria-current="page">Apuntes</a>
         </nav>
     </header>
-
     <main>
-        <!-- Tema 1: Estructura Básica -->
         <section>
-            <h2>1. Estructura Básica y Semántica HTML5</h2>
-            <ul>
-                <li><code>&lt;!DOCTYPE html&gt;</code>: Declara que el documento sigue la especificación HTML5.</li>
-                <li><code>&lt;html lang="es"&gt;</code>: Raíz del documento con el idioma del contenido.</li>
-                <li><code>&lt;head&gt;</code>: Contiene metadatos como la codificación <code>UTF-8</code>, la configuración del <code>viewport</code> para diseño adaptativo y los enlaces a los archivos CSS.</li>
-                <li><code>&lt;body&gt;</code>: Alberga todo el contenido visible de la página.</li>
-                <li><code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;footer&gt;</code>: Bloques estructurales para la correcta arquitectura semántica de la web.</li>
-            </ul>
+            <h2>1. Estructura del documento</h2>
+            <dl>
+                <dt><code>&lt;!DOCTYPE html&gt;</code></dt><dd>Declara el documento como HTML moderno para que el navegador use el modo estándar.</dd>
+                <dt><code>&lt;html lang="es"&gt;</code></dt><dd>Elemento raíz. <code>lang</code> declara el idioma principal para accesibilidad, buscadores y pronunciación. En páginas escritas en inglés se usa <code>en</code>.</dd>
+                <dt><code>&lt;head&gt;</code> / <code>&lt;body&gt;</code></dt><dd><code>head</code> contiene metadatos, título, CSS y scripts; <code>body</code> contiene el contenido presentado al usuario.</dd>
+                <dt><code>&lt;meta charset="UTF-8"&gt;</code></dt><dd>Permite mostrar correctamente tildes, eñes y otros caracteres.</dd>
+                <dt><code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code></dt><dd>Adapta el ancho de la página a la pantalla del dispositivo. El nombre correcto es <code>viewport</code>.</dd>
+                <dt><code>&lt;meta name="author"&gt;</code></dt><dd>Indica quién creó el documento.</dd>
+                <dt><code>&lt;title&gt;</code></dt><dd>Define el título de la pestaña y el nombre usado por marcadores y buscadores.</dd>
+                <dt><code>&lt;link rel="stylesheet" href="..."&gt;</code></dt><dd>Vincula una hoja CSS externa. <code>href</code> es la ruta y <code>rel</code> declara la relación del archivo.</dd>
+                <dt><code>&lt;script src="..."&gt;</code></dt><dd>Carga JavaScript externo. <code>src</code> contiene su ruta; el código de esta carpeta usa funciones de la calculadora.</dd>
+            </dl>
         </section>
-
-        <!-- Tema 2: CSS y Vincular Estilos Externos -->
         <section>
-            <h2>2. Hojas de Estilo CSS y Separación de Código</h2>
-            <ul>
-                <li><strong>CSS Externo (Buenas prácticas):</strong> Se vincula mediante <code>&lt;link rel="stylesheet" href="css/ejercicio1.css"&gt;</code> en el <code>&lt;head&gt;</code>. Mantiene separada la estructura HTML de la presentación visual.</li>
-                <li><strong>CSS Interno:</strong> Se inserta mediante la etiqueta <code>&lt;style&gt;</code> dentro del propio HTML.</li>
-                <li><strong>Selectores de Clase e ID:</strong> Permiten aplicar estilos específicos usando <code>class="nombre"</code> (selector <code>.nombre</code>) o <code>id="nombre"</code> (selector <code>#nombre</code>).</li>
-                <li><strong>Propiedades tipográficas y visuales aprendidas:</strong>
-                    <ul>
-                        <li><code>font-family</code>: Tipografía utilizada (ej. Arial, Verdana).</li>
-                        <li><code>font-size</code>: Tamaño del texto en píxeles (ej. <code>30px</code>, <code>14px</code>).</li>
-                        <li><code>font-style</code> y <code>font-weight</code>: Estilos de itálica (<code>italic</code>) y negrita (<code>bold</code>).</li>
-                        <li><code>color</code> y <code>background-color</code>: Color del texto y del fondo.</li>
-                        <li><code>text-decoration</code>: Modificadores como el subrayado (<code>underline</code>).</li>
-                        <li><code>text-align</code>: Alineación del contenido (ej. <code>center</code>).</li>
-                    </ul>
-                </li>
-            </ul>
+            <h2>2. Estructura semántica y navegación</h2>
+            <dl>
+                <dt><code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code></dt><dd>Cabecera, contenido principal único de la página y pie con información final.</dd>
+                <dt><code>&lt;nav&gt;</code></dt><dd>Contiene enlaces de navegación. <code>aria-label</code> ofrece un nombre accesible al menú; <code>aria-current="page"</code> marca el enlace de la página actual.</dd>
+                <dt><code>&lt;section&gt;</code></dt><dd>Agrupa contenido relacionado, normalmente con un encabezado.</dd>
+                <dt><code>&lt;div&gt;</code></dt><dd>Contenedor genérico de bloque, útil para agrupar contenido y aplicar estilos cuando no hay un elemento semántico más adecuado.</dd>
+                <dt><code>&lt;dl&gt;</code>, <code>&lt;dt&gt;</code>, <code>&lt;dd&gt;</code></dt><dd>Lista de definiciones, término que se describe y descripción del término.</dd>
+                <dt><code>&lt;h1&gt;</code>–<code>&lt;h6&gt;</code></dt><dd>Encabezados ordenados por nivel; <code>h1</code> es el título principal y los niveles siguientes estructuran subsecciones.</dd>
+                <dt><code>&lt;p&gt;</code></dt><dd>Párrafo de texto.</dd>
+                <dt><code>&lt;details&gt;</code> / <code>&lt;summary&gt;</code></dt><dd>Crean un panel desplegable nativo; <code>summary</code> es la parte visible que se pulsa.</dd>
+                <dt><code>&lt;hr&gt;</code> / <code>&lt;br&gt;</code></dt><dd><code>hr</code> separa temáticamente el contenido; <code>br</code> inserta un salto de línea dentro de un texto.</dd>
+            </dl>
         </section>
-
-        <!-- Tema 3: Bloque vs En línea -->
         <section>
-            <h2>3. Elementos en Bloque y en Línea</h2>
-            <ul>
-                <li><code>&lt;div&gt;</code>: Contenedor genérico de **bloque**. Ocupa todo el ancho de línea y fuerza un salto de línea.</li>
-                <li><code>&lt;span&gt;</code>: Contenedor genérico **en línea**. Solo envuelve el texto especificado sin forzar saltos de línea.</li>
-                <li><code>&lt;h1&gt;</code> a <code>&lt;h6&gt;</code>: Titulares estructurados jerárquicamente.</li>
-                <li><code>&lt;p&gt;</code>: Bloque de texto para párrafos.</li>
-                <li><code>&lt;pre&gt;</code>: Bloque de texto **preformateado** que respeta los espacios en blanco y los saltos de línea del código fuente.</li>
-                <li><code>&lt;strong&gt;</code>: Destaca la importancia del texto en negrita.</li>
-                <li><code>&lt;em&gt;</code>: Aplica énfasis visual en cursiva.</li>
-                <li><code>&lt;br&gt;</code>: Inserta un salto de línea manual dentro de un bloque.</li>
-            </ul>
+            <h2>3. Texto, listas, enlaces e imágenes</h2>
+            <dl>
+                <dt><code>&lt;strong&gt;</code> / <code>&lt;em&gt;</code></dt><dd>Marcan importancia y énfasis. El navegador suele mostrarlos en negrita y cursiva.</dd>
+                <dt><code>&lt;span&gt;</code></dt><dd>Contenedor genérico en línea para seleccionar o estilizar parte del texto.</dd>
+                <dt><code>&lt;pre&gt;</code> / <code>&lt;code&gt;</code></dt><dd><code>pre</code> conserva espacios y saltos; <code>code</code> representa código informático en línea.</dd>
+                <dt><code>&lt;del&gt;</code>, <code>&lt;sub&gt;</code>, <code>&lt;sup&gt;</code></dt><dd>Texto eliminado o tachado, subíndice y superíndice.</dd>
+                <dt><code>&lt;ul&gt;</code> / <code>&lt;ol&gt;</code> / <code>&lt;li&gt;</code></dt><dd>Lista sin orden, lista numerada y elemento de una lista.</dd>
+                <dt><code>&lt;a href="..."&gt;</code></dt><dd>Enlace. <code>href</code> indica destino; puede apuntar a otra página, una dirección externa, un correo con <code>mailto:</code> o un identificador de la misma página. <code>target="_blank"</code> abre otra pestaña.</dd>
+                <dt><code>&lt;img src="..." alt="..."&gt;</code></dt><dd>Inserta una imagen; <code>src</code> es el archivo y <code>alt</code> una descripción alternativa accesible.</dd>
+            </dl>
         </section>
-
-        <!-- Tema 4: Enlaces e Imágenes -->
         <section>
-            <h2>4. Hipervínculos e Imágenes</h2>
-            <ul>
-                <li><code>&lt;a href="URL" target="_blank"&gt;</code>: Enlace a páginas externas. El atributo <code>target="_blank"</code> abre la dirección en una nueva pestaña.</li>
-                <li><code>&lt;a href="#id_destino"&gt;</code>: **Marcador o ancla interna** para saltar a una sección de la misma página identificada con el atributo <code>id="id_destino"</code>.</li>
-                <li><code>&lt;img src="ruta" alt="descripción"&gt;</code>: Inserta elementos visuales con texto alternativo accesible.</li>
-            </ul>
+            <h2>4. Tablas y formularios</h2>
+            <dl>
+                <dt><code>&lt;table&gt;</code>, <code>&lt;caption&gt;</code></dt><dd>Tabla de datos y su título descriptivo.</dd>
+                <dt><code>&lt;thead&gt;</code> / <code>&lt;tbody&gt;</code></dt><dd>Agrupan respectivamente las filas de encabezado y las filas de datos.</dd>
+                <dt><code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code></dt><dd>Fila, celda de encabezado y celda de datos. <code>rowspan</code> extiende una celda por varias filas y <code>colspan</code> por varias columnas.</dd>
+                <dt><code>&lt;form action="..." method="..."&gt;</code></dt><dd>Contenedor de controles para enviar datos. <code>action</code> indica el destino y <code>method</code> el método de envío; <code>#</code> no configura un servicio real.</dd>
+                <dt><code>&lt;fieldset&gt;</code> / <code>&lt;legend&gt;</code></dt><dd>Agrupan controles relacionados y proporcionan el título del grupo.</dd>
+                <dt><code>&lt;label for="id"&gt;</code></dt><dd>Etiqueta descriptiva asociada al control cuyo <code>id</code> coincide con <code>for</code>.</dd>
+                <dt><code>&lt;input&gt;</code></dt><dd>Control de entrada. En estas páginas aparecen <code>type="text"</code>, <code>email</code>, <code>submit</code> y <code>reset</code>; <code>id</code> identifica el control, <code>name</code> es la clave enviada, <code>required</code> lo hace obligatorio, <code>value</code> fija su valor, y <code>disabled</code> lo desactiva.</dd>
+                <dt><code>&lt;textarea&gt;</code></dt><dd>Campo de texto de varias líneas; <code>rows</code> y <code>cols</code> sugieren sus dimensiones.</dd>
+                <dt><code>&lt;button&gt;</code></dt><dd>Botón interactivo. En la calculadora sus atributos <code>onclick</code> llaman a funciones JavaScript al pulsarlo.</dd>
+            </dl>
         </section>
-
-        <!-- Tema 5: Tablas -->
         <section>
-            <h2>5. Estructura de Tablas y Combinación de Celdas</h2>
-            <ul>
-                <li><code>&lt;table&gt;</code>, <code>&lt;tr&gt;</code>, <code>&lt;th&gt;</code>, <code>&lt;td&gt;</code>: Etiquetas para construir la cuadrícula de datos (tabla, fila, encabezado y celda).</li>
-                <li><code>&lt;caption&gt;</code>: Define el título o descripción semántica vinculada directamente a la tabla.</li>
-                <li><code>colspan="n"</code>: Expande una celda a lo largo de <em>n</em> columnas horizontales.</li>
-                <li><code>rowspan="n"</code>: Expande una celda a lo largo de <em>n</em> filas verticales.</li>
-            </ul>
+            <h2>5. Cómo se escribe CSS</h2>
+            <p>Una regla se compone de un selector y declaraciones entre llaves: <code>selector { propiedad: valor; }</code>. El selector elige los elementos; cada propiedad cambia un aspecto. Un selector de etiqueta como <code>p</code> alcanza todos los párrafos; <code>.clase</code> selecciona elementos con esa clase; <code>#id</code> selecciona el elemento con ese identificador; las comas agrupan selectores; los espacios indican descendientes; <code>:hover</code> actúa al pasar el puntero; <code>[type="email"]</code> selecciona por atributo; <code>*</code> selecciona todos los elementos.
+            </p>
+            <h3>Propiedades usadas en las hojas CSS del proyecto</h3>
+            <dl>
+                <dt><code>font-family</code>, <code>font-size</code>, <code>font-style</code>, <code>font-weight</code></dt><dd>Familia tipográfica y alternativas, tamaño, variante como cursiva y grosor como negrita.</dd>
+                <dt><code>color</code>, <code>background</code>, <code>background-color</code>, <code>background-image</code></dt><dd>Color del texto; fondo abreviado; color de fondo; e imagen de fondo.</dd>
+                <dt><code>background-repeat</code>, <code>background-position</code>, <code>background-size</code></dt><dd>Controlan repetición, colocación y tamaño de la imagen de fondo.</dd>
+                <dt><code>text-align</code>, <code>text-decoration</code>, <code>line-height</code></dt><dd>Alineación del texto, decoración como subrayado y separación vertical entre líneas.</dd>
+                <dt><code>margin</code>, <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code>, <code>margin-left</code></dt><dd>Espacio exterior del elemento; las variantes fijan cada lado.</dd>
+                <dt><code>padding</code>, <code>padding-left</code></dt><dd>Espacio interior entre contenido y borde; puede definirse para todos los lados o para la izquierda.</dd>
+                <dt><code>width</code>, <code>max-width</code>, <code>height</code></dt><dd>Ancho, ancho máximo y alto del elemento. <code>height</code> aparece como concepto de dimensión y puede usarse aunque no tenga regla en las hojas actuales.</dd>
+                <dt><code>display</code>, <code>list-style</code>, <code>gap</code></dt><dd>Modo de disposición (por ejemplo, bloque, en línea o flex), marcador de listas y separación entre elementos flexibles.</dd>
+                <dt><code>border</code>, <code>border-width</code>, <code>border-top</code>, <code>border-left</code>, <code>border-radius</code></dt><dd>Borde completo, grosor, borde superior o izquierdo y redondeo de esquinas.</dd>
+                <dt><code>border-collapse</code>, <code>border-spacing</code></dt><dd>Determinan si los bordes de tabla se fusionan y qué espacio hay entre celdas.</dd>
+                <dt><code>box-sizing</code></dt><dd>Define cómo se calcula el ancho/alto; <code>border-box</code> incluye relleno y borde en el ancho declarado.</dd>
+                <dt><code>box-shadow</code></dt><dd>Añade una sombra exterior para dar profundidad.</dd>
+                <dt><code>cursor</code>, <code>user-select</code></dt><dd>Cambian el cursor al pasar por encima y si el texto puede seleccionarse.</dd>
+                <dt><code>flex</code> / <code>fit-content</code> (valores de <code>display</code>/<code>width</code>)</dt><dd>En las prácticas, <code>display:flex</code> coloca elementos flexibles; <code>width:fit-content</code> ajusta el ancho al contenido.</dd>
+            </dl>
         </section>
-
-        <!-- Tema 6: Formularios -->
         <section>
-            <h2>6. Formularios Interactivos</h2>
-            <ul>
-                <li><code>&lt;form action="#" method="post"&gt;</code>: Estructura contenedora para la recogida de datos.</li>
-                <li><code>&lt;fieldset&gt;</code> y <code>&lt;legend&gt;</code>: Agrupan los controles dentro de una caja con título decorativo.</li>
-                <li><code>&lt;label for="id_campo"&gt;</code>: Vincula el texto con la casilla correspondiente mediante la coincidencia con su atributo <code>id</code>.</li>
-                <li><code>&lt;input&gt;</code>: Elemento de entrada según el tipo especificado en <code>type</code> (<code>text</code>, <code>email</code>, <code>submit</code>, <code>reset</code>).</li>
-                <li><code>&lt;textarea&gt;</code>: Campo multilínea para la introducción de comentarios o mensajes extensos.</li>
-            </ul>
+            <h2>6. Selectores y clases de las hojas del proyecto</h2>
+            <p><code>Estilos.css</code> aplica el aspecto compartido: <code>body</code> configura letra, espaciado y fondo; <code>header</code> y <code>footer</code> comparten franja morada; los enlaces de cabecera/pie tienen color y estado <code>:hover</code>; <code>main</code> es una tarjeta blanca; <code>fieldset</code>, <code>legend</code>, <code>label</code> y los selectores por tipo dan formato al formulario; <code>.form-buttons</code> separa sus botones; <code>.tabla-horario</code> y sus celdas construyen el horario; <code>.recreo</code> destaca la pausa; <code>details</code>, <code>summary</code>, <code>details details</code> y <code>ul.sublista</code> estilizan los desplegables del índice.</p>
+            <p>Las hojas de las prácticas usan además selectores de elemento (<code>body</code>, <code>h1</code>, <code>div</code>, <code>pre</code>, <code>hr</code>, <code>th</code>, <code>td</code>), clases reutilizables (<code>.parrafo</code>, <code>.resaltado</code>, <code>.subrayado</code>, <code>.menu-horizontal</code>, <code>.tabla-1</code>, <code>.bloque-gris</code>, entre otras) e identificadores (<code>#parrafo1</code>, <code>#parrafo2</code>, <code>#parrafo3</code>). Las clases se repiten en varios elementos; cada <code>id</code> debe ser único dentro de una página. Las reglas de tablas, menús, párrafos, fondos e identificadores sirven para demostrar cada selector y propiedad en el ejercicio correspondiente.</p>
+            <p>La calculadora se enlaza a <code>PrimerScripts.js</code>: <code>escribir()</code> añade una tecla a la pantalla, <code>borrar()</code> la reinicia, e <code>igual()</code> está declarada pero todavía no realiza el cálculo. Los números <code>numero1</code> a <code>numero10</code> declarados en ese archivo no intervienen en esas funciones.</p>
         </section>
     </main>
-
-    <footer>
-        <p>CIFP Virgen de Gracia | Asignatura LMSGI (1º CFGS ASIR)</p>
-    </footer>
+    <footer><p>CIFP Virgen de Gracia | Asignatura LMSGI (1.º CFGS ASIR)</p></footer>
 </body>
 </html>
+
+

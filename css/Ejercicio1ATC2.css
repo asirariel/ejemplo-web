@@ -1,0 +1,10 @@
+.header-box {
+    background-color: #4ed8f8;
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+    padding: 6px 0;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}

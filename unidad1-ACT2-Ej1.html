@@ -2,39 +2,59 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="Ariel" content="width=device-width, initial-scale=1.0">
-    <title>Ejer2</title>
-    <link rel="stylesheet" href="css/Estilo.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejer2 - Ejercicio 1</title>
+    <link rel="stylesheet" href="css/Ejercicio1 ATC2.css">
 </head>
 <body>
-    <h1>Lista no ordenada</h1>
+
+    <!-- Encabezado lista no ordenada -->
+    <div class="header-box">
+        lista no ordenada
+    </div>
+
     <ul>
-        <li>Opcion 1</li>
-        <li>Opcion 2</li>
-        <li>Opcion 3</li>
-        <li>Opcion 4</li>
-        <li>Opcion 5</li>
+        <li>opcion1</li>
+        <li>opcion2
+            <ul type="square">
+                <li>opcion21</li>
+                <li>opcion22</li>
+            </ul>
+        </li>
+        <li>opcion3</li>
+        <li>opcion4</li>
+        <li>opcion5</li>
     </ul>
+
     <hr>
 
-    <h1>Lista ordenada</h1>
+    <!-- Encabezado lista ordenada -->
+    <div class="header-box">
+        lista ordenada
+    </div>
+
     <ol>
-        <li>Opcion 1</li>
-        <li>Opcion 2</li>
-        <li>Opcion 3</li>
-        <li>Opcion 4</li>
-        <li>Opcion 5</li>
+        <li>opcion1</li>
+        <li>opcion2
+            <ul type="square">
+                <li>opcion21</li>
+                <li>opcion22</li>
+            </ul>
+        </li>
+        <li>opcion3</li>
+        <li>opcion4
+            <ol type="a">
+                <li>opcion41
+                    <ol type="i">
+                        <li>opcion411</li>
+                        <li>opcion412</li>
+                    </ol>
+                </li>
+                <li>opcion42</li>
+            </ol>
+        </li>
+        <li>opcion5</li>
     </ol>
-    <hr>
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
