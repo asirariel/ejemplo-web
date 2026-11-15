@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ariel">
+    <meta name="description" content="Juego de piedra, papel o tijera contra el ordenador.">
+    <title>Piedra, papel o tijera | Portafolio LMSGI</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link id="tema-oscuro" rel="stylesheet" href="css/estilos-oscuro.css" disabled>
+    <script src="js/tema.js"></script>
+    <script src="js/piedra-papel-tijera.js" defer></script>
+</head>
+<body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+    <header class="cabecera">
+        <div class="contenedor">
+            <div class="cabecera-barra">
+                <a class="marca" href="index.html">Portafolio LMSGI</a>
+                <button type="button" class="boton boton-tema" data-cambiar-tema aria-pressed="false">Modo oscuro</button>
+            </div>
+            <nav class="menu" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="horario.html">Horario</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="piedra-papel-tijera.html" aria-current="page">Piedra, papel o tijera</a></li>
+                    <li><a href="apuntes.html">Apuntes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor" id="contenido">
+        <div class="encabezado-pagina">
+            <h1>Piedra, papel o tijera</h1>
+            <p>Elige una opción y juega contra el ordenador. El marcador cuenta las rondas de esta visita.</p>
+        </div>
+
+        <section class="panel juego" aria-label="Juego">
+            <ul class="marcador" aria-label="Marcador">
+                <li><span class="marcador-etiqueta">Tú</span><strong id="puntos-jugador">0</strong></li>
+                <li><span class="marcador-etiqueta">Empates</span><strong id="puntos-empate">0</strong></li>
+                <li><span class="marcador-etiqueta">Máquina</span><strong id="puntos-maquina">0</strong></li>
+            </ul>
+
+            <div class="opciones" id="opciones" role="group" aria-label="Elige tu jugada">
+                <button type="button" class="opcion" data-jugada="piedra">Piedra</button>
+                <button type="button" class="opcion" data-jugada="papel">Papel</button>
+                <button type="button" class="opcion" data-jugada="tijera">Tijera</button>
+            </div>
+
+            <div class="resultado" id="resultado" aria-live="polite">
+                <p class="resultado-mensaje" id="resultado-mensaje">Elige una opción para empezar</p>
+                <p class="resultado-detalle" id="resultado-detalle"></p>
+            </div>
+
+            <button type="button" class="boton boton-secundario" id="reiniciar">Reiniciar marcador</button>
+
+            <p class="reglas">Reglas: la piedra gana a la tijera, la tijera gana al papel y el papel gana a la piedra. Si ambos eligen lo mismo, es empate.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>CIFP Virgen de Gracia | Asignatura LMSGI (1.º CFGS ASIR)</p>
+        </div>
+    </footer>
+</body>
+</html>

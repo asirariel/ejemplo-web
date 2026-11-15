@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h3 {
+    font-weight: bold;
+}
+
+/* --- MENÚ HORIZONTAL --- */
+.menu-horizontal {
+    list-style: none;
+    padding: 12px 20px;
+    margin: 0;
+    background-color: #79764d;
+    display: flex;
+    gap: 25px;
+    width: fit-content;
+}
+
+.menu-horizontal li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* --- MENÚ VERTICAL --- */
+.menu-vertical {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 150px;
+}
+
+.menu-vertical li {
+    background-color: #62e232;
+}
+
+.menu-vertical li.activo {
+    background-color: #ff1d25;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 12px 15px;
+    font-size: 18px;
+}
+
+hr {
+    margin: 25px 0;
+    border: 0;
+    border-top: 1px solid #aaa;
+}

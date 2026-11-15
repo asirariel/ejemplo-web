@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ariel">
+    <meta name="description" content="Horario semanal de clases de 1.º CFGS ASIR.">
+    <title>Horario de clases | Portafolio LMSGI</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link id="tema-oscuro" rel="stylesheet" href="css/estilos-oscuro.css" disabled>
+    <script src="js/tema.js"></script>
+</head>
+<body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+    <header class="cabecera">
+        <div class="contenedor">
+            <div class="cabecera-barra">
+                <a class="marca" href="index.html">Portafolio LMSGI</a>
+                <button type="button" class="boton boton-tema" data-cambiar-tema aria-pressed="false">Modo oscuro</button>
+            </div>
+            <nav class="menu" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="horario.html" aria-current="page">Horario</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="piedra-papel-tijera.html">Piedra, papel o tijera</a></li>
+                    <li><a href="apuntes.html">Apuntes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor" id="contenido">
+        <div class="encabezado-pagina">
+            <h1>Horario de clases</h1>
+        </div>
+
+        <div class="tabla-contenedor">
+            <table class="tabla-horario">
+                <caption>Horario semanal</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Horario</th>
+                        <th scope="col">Lunes</th>
+                        <th scope="col">Martes</th>
+                        <th scope="col">Miércoles</th>
+                        <th scope="col">Jueves</th>
+                        <th scope="col">Viernes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">8:30 - 9:25</th>
+                        <td rowspan="2">IPE-I</td>
+                        <td>SASP</td>
+                        <td rowspan="2">LMSGI</td>
+                        <td>IPCGS</td>
+                        <td rowspan="2">PAR</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9:25 - 10:20</th>
+                        <td>IPE-I</td>
+                        <td rowspan="2">ISO</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">10:20 - 11:15</th>
+                        <td>PAR</td>
+                        <td>GBD</td>
+                        <td>SoS</td>
+                        <td>FH</td>
+                    </tr>
+                    <tr>
+                        <td colspan="6" class="recreo">Recreo (11:15 - 11:45)</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">11:45 - 12:40</th>
+                        <td>IPCGS</td>
+                        <td>GBD</td>
+                        <td>SoS</td>
+                        <td rowspan="2">GBD</td>
+                        <td>FH</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">12:40 - 13:35</th>
+                        <td rowspan="2">ISO</td>
+                        <td>PIMAS</td>
+                        <td rowspan="2">DASP</td>
+                        <td rowspan="2">ISO</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">13:35 - 14:30</th>
+                        <td>FH</td>
+                        <td>LMSGI</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>CIFP Virgen de Gracia | Asignatura LMSGI (1.º CFGS ASIR)</p>
+        </div>
+    </footer>
+</body>
+</html>

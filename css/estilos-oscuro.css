@@ -1,0 +1,36 @@
+/* =========================================================
+   ESTILOS-OSCURO.CSS - Modo oscuro (tema morado)
+   Se carga despues de estilos.css y solo redefine las variables
+   de color, de modo que todos los componentes cambian a la vez.
+   ========================================================= */
+
+:root {
+    color-scheme: dark;
+
+    --fondo: #130e1f;
+    --superficie: #1c1530;
+    --superficie-suave: #251c3d;
+    --texto: #ece6f7;
+    --texto-suave: #b8add2;
+    --borde: #3b2f5e;
+    --borde-campo: #54457c;
+
+    --primario: #b794f4;
+    --primario-hover: #d0b6fa;
+    --texto-sobre-primario: #1a1030;
+    --acento: #33265a;
+    --cabecera: #2a1852;
+    --cabecera-texto: #f5efff;
+
+    --victoria: #b794f4;
+    --derrota: #f28ba8;
+    --empate: #a79fbd;
+
+    --foco: rgba(183, 148, 244, 0.4);
+    --sombra: 0 2px 12px rgba(0, 0, 0, 0.35);
+    --sombra-fuerte: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.cabecera {
+    border-bottom: 1px solid #44307a;
+}

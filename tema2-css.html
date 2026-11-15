@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ariel">
+    <meta name="description" content="Recursos de CSS aplicados en el portafolio y dónde verlos.">
+    <title>Tema 2: CSS | Portafolio LMSGI</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link id="tema-oscuro" rel="stylesheet" href="css/estilos-oscuro.css" disabled>
+    <script src="js/tema.js"></script>
+</head>
+<body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+    <header class="cabecera">
+        <div class="contenedor">
+            <div class="cabecera-barra">
+                <a class="marca" href="index.html">Portafolio LMSGI</a>
+                <button type="button" class="boton boton-tema" data-cambiar-tema aria-pressed="false">Modo oscuro</button>
+            </div>
+            <nav class="menu" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="horario.html">Horario</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="piedra-papel-tijera.html">Piedra, papel o tijera</a></li>
+                    <li><a href="apuntes.html">Apuntes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor" id="contenido">
+        <div class="encabezado-pagina">
+            <h1>Tema 2: CSS</h1>
+            <p>Recursos de CSS aplicados en este portafolio. Todo el diseño está en dos hojas externas: <code>estilos.css</code> (modo claro) y <code>estilos-oscuro.css</code> (modo oscuro).</p>
+        </div>
+
+        <section class="panel" aria-labelledby="titulo-recursos">
+            <h2 id="titulo-recursos">Qué se ha aplicado</h2>
+            <div class="tabla-contenedor">
+                <table class="tabla-datos">
+                    <caption>Contenidos del Tema 2 y dónde se usan</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Contenido</th>
+                            <th scope="col">Dónde se ve</th>
+                            <th scope="col">Cómo se aplica</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <th scope="row">Diseño general y jerarquía visual</th>
+                        <td>Todas las páginas</td>
+                        <td>Contenedor centrado de 1000 px, paneles con márgenes y espaciados uniformes y tres niveles de títulos.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Colores y tipografías</th>
+                        <td><code>estilos.css</code>, sección 1</td>
+                        <td>Paleta morada definida con variables (<code>--primario</code>, <code>--fondo</code>) y fuente del sistema legible.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Selectores</th>
+                        <td>Todo el CSS</td>
+                        <td>Etiqueta (<code>h1</code>), clase (<code>.panel</code>), atributo (<code>[aria-current="page"]</code>), descendiente (<code>.menu ul</code>) y pseudoclases (<code>:hover</code>, <code>:focus-visible</code>, <code>:user-invalid</code>).</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Modelo de caja</th>
+                        <td>Paneles, campos y botones</td>
+                        <td><code>margin</code>, <code>padding</code>, <code>border</code>, <code>border-radius</code> y <code>box-sizing: border-box</code> para todos los elementos.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Flexbox y Grid</th>
+                        <td>Menú, tarjetas, calculadora, marcador</td>
+                        <td>Flexbox en cabecera, menú y botones; Grid en la rejilla de tarjetas, las teclas de la calculadora y el marcador.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Efectos visuales</th>
+                        <td>Tarjetas, botones, opciones del juego</td>
+                        <td>Sombras, esquinas redondeadas, <code>transition</code>, <code>transform</code> y estados <code>:hover</code> y <code>:active</code>.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Diseño adaptable</th>
+                        <td>Todas las páginas</td>
+                        <td><code>@media (max-width: 640px)</code>, columnas con <code>auto-fit</code> y <code>minmax()</code> y tabla del horario con desplazamiento horizontal.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Recursos investigados</th>
+                        <td><code>estilos-oscuro.css</code></td>
+                        <td>Modo oscuro que solo redefine variables, <code>color-scheme</code>, enlace «saltar al contenido» y <code>prefers-reduced-motion</code>.</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="panel" aria-labelledby="titulo-ver">
+            <h2 id="titulo-ver">Dónde verlo</h2>
+            <div class="rejilla">
+                <a class="tarjeta" href="horario.html">
+                    <h3>Horario</h3>
+                    <p>Estilo de tablas con celdas combinadas.</p>
+                </a>
+                <a class="tarjeta" href="formulario.html">
+                    <h3>Formulario</h3>
+                    <p>Estados de foco y validación.</p>
+                </a>
+                <a class="tarjeta" href="calculadora.html">
+                    <h3>Calculadora</h3>
+                    <p>Distribución con Grid.</p>
+                </a>
+                <a class="tarjeta" href="piedra-papel-tijera.html">
+                    <h3>Piedra, papel o tijera</h3>
+                    <p>Flexbox, transiciones y color de estado.</p>
+                </a>
+                <a class="tarjeta" href="apuntes.html#css">
+                    <h3>Apuntes de CSS</h3>
+                    <p>Explicación de selectores y propiedades.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>CIFP Virgen de Gracia | Asignatura LMSGI (1.º CFGS ASIR)</p>
+        </div>
+    </footer>
+</body>
+</html>

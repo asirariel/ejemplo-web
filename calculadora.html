@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ariel">
+    <meta name="description" content="Calculadora con las cuatro operaciones básicas hecha con HTML, CSS y JavaScript.">
+    <title>Calculadora | Portafolio LMSGI</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link id="tema-oscuro" rel="stylesheet" href="css/estilos-oscuro.css" disabled>
+    <script src="js/tema.js"></script>
+    <script src="js/calculadora.js" defer></script>
+</head>
+<body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+    <header class="cabecera">
+        <div class="contenedor">
+            <div class="cabecera-barra">
+                <a class="marca" href="index.html">Portafolio LMSGI</a>
+                <button type="button" class="boton boton-tema" data-cambiar-tema aria-pressed="false">Modo oscuro</button>
+            </div>
+            <nav class="menu" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="horario.html">Horario</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="calculadora.html" aria-current="page">Calculadora</a></li>
+                    <li><a href="piedra-papel-tijera.html">Piedra, papel o tijera</a></li>
+                    <li><a href="apuntes.html">Apuntes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor" id="contenido">
+        <div class="encabezado-pagina">
+            <h1>Calculadora</h1>
+        </div>
+
+        <section class="panel" aria-label="Calculadora">
+            <div class="calculadora">
+                <div class="calc-pantalla">
+                    <span class="calc-operacion" id="operacion-pendiente" aria-hidden="true"></span>
+                    <output class="calc-valor" id="pantalla" aria-live="polite">0</output>
+                </div>
+                <div class="calc-teclas" id="teclas">
+                    <button type="button" class="tecla tecla-borrar tecla-triple" data-accion="borrar">Borrar</button>
+                    <button type="button" class="tecla tecla-operacion" data-operacion="/" aria-label="Dividir">&divide;</button>
+                    <button type="button" class="tecla" data-numero="7">7</button>
+                    <button type="button" class="tecla" data-numero="8">8</button>
+                    <button type="button" class="tecla" data-numero="9">9</button>
+                    <button type="button" class="tecla tecla-operacion" data-operacion="*" aria-label="Multiplicar">&times;</button>
+                    <button type="button" class="tecla" data-numero="4">4</button>
+                    <button type="button" class="tecla" data-numero="5">5</button>
+                    <button type="button" class="tecla" data-numero="6">6</button>
+                    <button type="button" class="tecla tecla-operacion" data-operacion="-" aria-label="Restar">&minus;</button>
+                    <button type="button" class="tecla" data-numero="1">1</button>
+                    <button type="button" class="tecla" data-numero="2">2</button>
+                    <button type="button" class="tecla" data-numero="3">3</button>
+                    <button type="button" class="tecla tecla-operacion" data-operacion="+" aria-label="Sumar">+</button>
+                    <button type="button" class="tecla tecla-ancha" data-numero="0">0</button>
+                    <button type="button" class="tecla" data-numero="." aria-label="Punto decimal">.</button>
+                    <button type="button" class="tecla tecla-igual" data-accion="igual" aria-label="Calcular">=</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>CIFP Virgen de Gracia | Asignatura LMSGI (1.º CFGS ASIR)</p>
+        </div>
+    </footer>
+</body>
+</html>

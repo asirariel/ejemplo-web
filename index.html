@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ariel">
+    <meta name="description" content="Portafolio de Lenguajes de Marcas: prácticas de HTML, CSS y JavaScript.">
+    <title>Inicio | Portafolio LMSGI</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link id="tema-oscuro" rel="stylesheet" href="css/estilos-oscuro.css" disabled>
+    <script src="js/tema.js"></script>
+</head>
+<body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+    <header class="cabecera">
+        <div class="contenedor">
+            <div class="cabecera-barra">
+                <a class="marca" href="index.html">Portafolio LMSGI</a>
+                <button type="button" class="boton boton-tema" data-cambiar-tema aria-pressed="false">Modo oscuro</button>
+            </div>
+            <nav class="menu" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Inicio</a></li>
+                    <li><a href="horario.html">Horario</a></li>
+                    <li><a href="formulario.html">Formulario</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="piedra-papel-tijera.html">Piedra, papel o tijera</a></li>
+                    <li><a href="apuntes.html">Apuntes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor" id="contenido">
+        <div class="encabezado-pagina">
+            <h1>Portafolio de Lenguajes de Marcas</h1>
+        </div>
+
+            <section class="panel" id="tema-1" aria-labelledby="titulo-tema-1">
+                <h2 id="titulo-tema-1">Tema 1: HTML</h2>
+                <p>Actividades sobre etiquetas, listas, enlaces, tablas, clases e identificadores.</p>
+        <details>
+            <summary>Actividad 1</summary>
+            <ul>
+                <li><a href="unidad1-ACT1-Ej1.html">Ejercicio 1: Formato de texto</a></li>
+                <li><a href="unidad1-ACT1-Ej2.html">Ejercicio 2: Listas y enlaces</a></li>
+                <li><a href="unidad1-ACT1-Ej3.html">Ejercicio 3: Tablas</a></li>
+            </ul>
+        </details>
+        <details>
+            <summary>Actividad 2</summary>
+            <ul>
+                <li><a href="unidad1-ACT2-Ej1.html">Ejercicio 1: Listas</a></li>
+                <li><a href="unidad1-ACT2-Ej2.html">Ejercicio 2: Enlaces</a></li>
+                <li><a href="unidad1-ACT2-Ej3.html">Ejercicio 3: Bloques y texto en línea</a></li>
+            </ul>
+        </details>
+        <details>
+            <summary>Actividad 3</summary>
+            <ul>
+                <li><a href="unidad1-ACT3-Ej1.html">Ejercicio 1: Clases e identificadores</a></li>
+                <li><a href="unidad1-ACT3-Ej2.html">Ejercicio 2</a></li>
+            </ul>
+        </details>
+        <details>
+            <summary>Actividad 4</summary>
+            <ul>
+                <li><a href="unidad1-ACT4-Ej1.html">Ejercicio 1: Repaso general</a></li>
+            </ul>
+        </details>
+            </section>
+
+            <section class="panel" id="tema-2" aria-labelledby="titulo-tema-2">
+                <h2 id="titulo-tema-2">Tema 2: CSS</h2>
+                <div class="rejilla">
+                    <a class="tarjeta" href="tema2-css.html">
+                        <h3>Trabajos de CSS</h3>
+                        <p>Recursos de CSS aplicados en este portafolio y dónde verlos.</p>
+                    </a>
+                    <a class="tarjeta" href="apuntes.html#css">
+                        <h3>Apuntes de CSS</h3>
+                        <p>Selectores y propiedades explicados.</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class="panel" id="tema-3" aria-labelledby="titulo-tema-3">
+                <h2 id="titulo-tema-3">Tema 3: JavaScript</h2>
+                <div class="rejilla">
+                    <a class="tarjeta" href="calculadora.html">
+                        <h3>Calculadora</h3>
+                        <p>Suma, resta, multiplica y divide.</p>
+                    </a>
+                    <a class="tarjeta" href="piedra-papel-tijera.html">
+                        <h3>Piedra, papel o tijera</h3>
+                        <p>Juega contra el ordenador con marcador.</p>
+                    </a>
+                    <a class="tarjeta" href="ejemplo-cambio-de-tema.html">
+                        <h3>Cambio de tema</h3>
+                        <p>Cómo funciona el modo claro y oscuro.</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class="panel" id="otras-paginas" aria-labelledby="titulo-otras">
+                <h2 id="titulo-otras">Otras páginas</h2>
+                <div class="rejilla">
+                    <a class="tarjeta" href="horario.html">
+                        <h3>Horario</h3>
+                        <p>Horario semanal de clases.</p>
+                    </a>
+                    <a class="tarjeta" href="formulario.html">
+                        <h3>Formulario de contacto</h3>
+                        <p>Formulario con validación HTML.</p>
+                    </a>
+                    <a class="tarjeta" href="apuntes.html">
+                        <h3>Apuntes</h3>
+                        <p>Guía de etiquetas HTML y propiedades CSS.</p>
+                    </a>
+                </div>
+            </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>CIFP Virgen de Gracia | Asignatura LMSGI (1.º CFGS ASIR)</p>
+        </div>
+    </footer>
+</body>
+</html>

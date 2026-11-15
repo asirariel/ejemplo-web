@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+    background-color: #ffffff;
+}
+
+/* --- CABECERAS CON PATRÓN DE ICONOS --- */
+.cabecera {
+    background-color: #52e5f7; /* Fondo cian */
+    /* Icono tipo consola portátil en formato SVG repetido */
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="%232cb3ca"><path d="M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2zm2 3v5h8V5H8zm2 8H8v2h2v2h2v-2h-2v-2zm7 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-2 2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>');
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: 26px 26px;
+    text-align: center;
+    padding: 8px 0;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.cabecera h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    font-style: italic;
+    color: #000000;
+}
+
+/* --- ESTILOS GENERALES DE LOS PÁRRAFOS --- */
+.parrafo {
+    padding: 15px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+    font-size: 14px;
+    color: #000000;
+}
+
+/* --- ESTILOS ESPECÍFICOS POR ID --- */
+#parrafo1 {
+    background-color: #d7f7b3; /* Fondo verde claro */
+}
+
+#parrafo2 {
+    background-color: #fde28e; /* Fondo amarillo claro */
+}
+
+#parrafo3 {
+    background-color: #4c1fe0; /* Fondo violeta oscuro */
+    color: #ffffff;            /* Texto blanco */
+    font-weight: bold;
+    border-radius: 12px;        /* Bordes redondeados */
+}
+
+/* --- CLASES REUTILIZABLES --- */
+.caja-borde {
+    border: 2px solid #5720b7; /* Borde violeta */
+    padding: 2px 4px;
+    display: inline;
+}
+
+.texto-negrita {
+    font-weight: bold;
+}

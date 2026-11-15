@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ariel">
+    <meta name="description" content="Formulario de contacto con validación HTML.">
+    <title>Formulario de contacto | Portafolio LMSGI</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link id="tema-oscuro" rel="stylesheet" href="css/estilos-oscuro.css" disabled>
+    <script src="js/tema.js"></script>
+    <script src="js/formulario.js" defer></script>
+</head>
+<body>
+    <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+    <header class="cabecera">
+        <div class="contenedor">
+            <div class="cabecera-barra">
+                <a class="marca" href="index.html">Portafolio LMSGI</a>
+                <button type="button" class="boton boton-tema" data-cambiar-tema aria-pressed="false">Modo oscuro</button>
+            </div>
+            <nav class="menu" aria-label="Navegación principal">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="horario.html">Horario</a></li>
+                    <li><a href="formulario.html" aria-current="page">Formulario</a></li>
+                    <li><a href="calculadora.html">Calculadora</a></li>
+                    <li><a href="piedra-papel-tijera.html">Piedra, papel o tijera</a></li>
+                    <li><a href="apuntes.html">Apuntes</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contenedor" id="contenido">
+        <div class="encabezado-pagina">
+            <h1>Formulario de contacto</h1>
+            <p>Rellena los campos obligatorios para enviar un mensaje.</p>
+        </div>
+
+        <section class="panel">
+            <form class="formulario" id="formulario-contacto" action="#" method="post">
+                <fieldset>
+                    <legend>Información personal</legend>
+
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" autocomplete="name" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" autocomplete="email" required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="5"></textarea>
+                    </div>
+
+                    <div class="acciones">
+                        <button type="submit" class="boton">Enviar</button>
+                        <button type="reset" class="boton boton-secundario">Restablecer</button>
+                    </div>
+                </fieldset>
+            </form>
+            <p class="aviso" id="estado-formulario" role="status"></p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="contenedor">
+            <p>CIFP Virgen de Gracia | Asignatura LMSGI (1.º CFGS ASIR)</p>
+            <p>Contacto: <a href="mailto:asirariel@gmail.com">asirariel@gmail.com</a></p>
+        </div>
+    </footer>
+</body>
+</html>
